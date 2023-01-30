@@ -30,6 +30,7 @@ static void do_something(int connfd) {
 }
 
 int main() {
+    // socket
     int fd = socket(AF_INET, SOCK_STREAM, 0);
     if (fd < 0) {
         die("socket()");
